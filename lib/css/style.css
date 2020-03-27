@@ -8,11 +8,17 @@ body {
   background-color: #8f1965;
   font-family: 'Pacifico', cursive;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 h2 {
   font-size: 1.8rem;
   text-align: center;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .countdown {
@@ -65,14 +71,20 @@ h2 {
 }
 
 .main-container {
-  background: url('../images/image2.jpg') center no-repeat;
-
+  background: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../images/happyBday2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.main-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
 }
 
 .main-video-container {
@@ -112,6 +124,13 @@ h2 {
 .picture1>img {
   width: 100%;
   height: 100%;
+}
+
+footer {
+  background-color: #000;
+  width: 100%;
+  margin: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 1000px) {}

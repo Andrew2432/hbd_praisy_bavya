@@ -10,12 +10,15 @@
 			href="https://fonts.googleapis.com/css?family=Pacifico&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		/>
 		<link rel="stylesheet" href="lib/css/style.css" />
 	</head>
 	<body>
-		<header class="countdown">
+		<header class="countdown" id="countdown">
 			<h2>Countdown for celebration</h2>
-			<div id="countdown-over"></div>
 			<div id="clockdiv">
 				<div>
 					<span class="days" id="day"></span>
@@ -34,22 +37,25 @@
 					<div class="smalltext">Seconds</div>
 				</div>
 			</div>
+			<div id="countdown-over"></div>
 		</header>
 
-		<main class="main-container">
-			<h2>HAPPY BIRTHDAY</h2>
+		<main class="main-container" id="main-target">
+			<h2 class="animated fadeIn slideInDown delay-1s">HAPPY BIRTHDAY</h2>
 			<br />
-			<h2>TO</h2>
+			<h2 class="animated fadeIn slideLeft delay-2s">TO</h2>
 			<br />
-			<h2>The director of CSE</h2>
+			<h2 class="animated fadeIn delay-3s">The director of CSE</h2>
 			<br />
-			<h2>MARIA LIVIN</h2>
+			<h2 class="animated fadeIn delay-4s main-text">U. MARIA LIVIN</h2>
 			<br />
-			<button class="call-to-action">You have a new message</button>
+			<button class="call-to-action animated fadeIn delay-5s" id="btn-video">
+				You have a new message!
+			</button>
 		</main>
 
-		<section class="main-video-container">
-			<h2>A video message from your friends</h2>
+		<section class="main-video-container" id="video-div">
+			<h2>A video message from your friends!</h2>
 			<br />
 			<div class="video-container">
 				<iframe
@@ -71,6 +77,10 @@
 			</div>
 			<div class="picture2"></div>
 		</section>
+
+		<footer>
+			<h3>Made with 🤍 by CSE friends.</h3>
+		</footer>
 	</body>
 	<script src="lib/js/app.js"></script>
 </html>
