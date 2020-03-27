@@ -14,7 +14,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
 		/>
-		<link rel="stylesheet" href="lib/css/style.css" />
+		<link rel="stylesheet" href="lib/css/style.min.css" />
 	</head>
 	<body>
 		<header class="countdown" id="countdown">
@@ -41,15 +41,15 @@
 		</header>
 
 		<main class="main-container" id="main-target">
-			<h2 class="animated fadeIn slideInDown delay-1s">HAPPY BIRTHDAY</h2>
+			<h2 class="delay-1s" id="text1">HAPPY BIRTHDAY</h2>
 			<br />
-			<h2 class="animated fadeIn slideLeft delay-2s">TO</h2>
+			<h2 class="delay-2s" id="text2">TO</h2>
 			<br />
-			<h2 class="animated fadeIn delay-3s">The director of CSE</h2>
+			<h2 class="delay-3s" id="text3">The director of CSE</h2>
 			<br />
-			<h2 class="animated fadeIn delay-4s main-text">U. MARIA LIVIN</h2>
+			<h2 class="main-text delay-4s" id="text4">U. MARIA LIVIN</h2>
 			<br />
-			<button class="call-to-action animated fadeIn delay-5s" id="btn-video">
+			<button class="call-to-action delay-5s" id="btn-video">
 				You have a new message!
 			</button>
 		</main>
@@ -67,19 +67,21 @@
 					allowfullscreen
 				></iframe>
 			</div>
-			<h2>Your memories with us will always be cherished in our life.</h2>
+			<h2 id="short-film">A short film dedicated to you!</h2>
 		</section>
 
 		<section class="gallery">
 			<div class="picture1">
-				<h2>Stay happy always bro</h2>
+				<h2>Stay happy always bro.</h2>
 				<img src="lib/images/livin-happy.jpeg" alt="Director is happy" />
+				<h2>Your memories with us will always be cherished in our life.</h2>
+				<h2>We love you so much!</h2>
 			</div>
 			<div class="picture2"></div>
 		</section>
 
 		<footer>
-			<h3>Made with 🤍 by CSE friends.</h3>
+			<h3>Made with ❤️️ by CSE friends.</h3>
 		</footer>
 	</body>
 	<script src="lib/js/app.js"></script>
