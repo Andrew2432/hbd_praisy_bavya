@@ -5,13 +5,14 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #8f1965;
+  background-color: #000;
   font-family: 'Pacifico', cursive;
   color: #fff;
   scroll-behavior: smooth;
   scrollbar-color: transparent;
 }
 
+/* #FF69B4; */
 h2 {
   font-size: 1.8rem;
   text-align: center;
@@ -29,7 +30,7 @@ h3 {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  background: url('../images/selected/bday2.webp') center no-repeat;
+  background: url('../images/new/8.jpg') center no-repeat;
   background-size: cover;
 }
 
@@ -68,19 +69,20 @@ h3 {
   outline: none;
   border: 2px solid #fff;
   font-size: 1.5rem;
+  color: #fff;
   font-family: 'Pacifico', cursive;
 }
 
 .main-container {
-  background: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../images/selected/happyBday2.webp');
+  background: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2)), url('../images/new/22.jpg') center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-flow: column nowrap;
+  display: grid;
+  grid-template-rows: repeat(1fr, 6);
   width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .main-text {
@@ -92,6 +94,14 @@ h3 {
   background-color: #b94abd;
   width: 100%;
   height: 100%;
+}
+
+.praisy {
+  background-color: #0652C5;
+}
+
+.bavya {
+  background-color: #FF69B4;
 }
 
 .video-container {
@@ -110,10 +120,6 @@ h3 {
   right: 0;
   width: 100%;
   height: 100%;
-}
-
-.gallery {
-  background-color: #8f1965;
 }
 
 .picture1 {
